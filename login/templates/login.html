@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>登陆页面</title>
+</head>
+<body>
+  <h1>登陆页</h1>
+  <div name="message" style="color:red;">
+    {% if message %}
+      {{ message }}
+    {% endif %}
+  </div>
+
+  <!
+  <div>
+    <form action="/login/" method="post">
+      {% csrf_token %}
+      <label>用户名:</label>
+      <input type="text" name="username" placeholder="请输入用户名">
+      <br>
+      <label>密码：</label>
+      <input type="password" name="password" placeholder="请输入密码">
+      <br>
+      <input type="submit" value="submit">
+    </form>
+  </div>
+</body>
+</html>
